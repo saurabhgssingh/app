@@ -3,7 +3,7 @@ from flask import Flask, send_file
 app =Flask(__name__)
 
 
-@app.route('/download')
+@app.route('/')
 def download():
     file_path = "report.pdf"
     return send_file(file_path,as_attachment=True)
